@@ -9,7 +9,12 @@
 ?>
             </main>
             <footer class="footer">
-                Footer...
+                <div class="social">
+                    Social links
+                </div>
+                <div class="copyright-policies">
+                    Copyright...
+                </div>
             </footer>
         </div>
         <?php wp_footer(); ?>

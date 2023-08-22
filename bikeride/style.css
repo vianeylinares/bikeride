@@ -10,3 +10,170 @@ Licence: GNU General Public Licence v2 or later
 Licence URI: http://www.gnu.org/licences/gpl-2.0.html
 Tags: 
 */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.sticky_header{
+    position: fixed;
+    width: 100%;
+}
+
+.header .mobile-menu-control,
+.header .shop-items{
+    display: flex;
+    flex-basis: auto;
+    position: absolute;
+}
+
+.header .mobile-menu-control{
+    left: 0;
+}
+
+.header .shop-items{
+    right: 0;
+}
+
+.header button{
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    display: none;
+}
+
+.header .brand{
+    height: 50px;
+    width: 150px;
+    background-color: #000;
+}
+
+.header nav{
+    display: flex;
+    flex-basis: 1000px;
+    height: 50px;
+}
+
+.nav{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-item,
+.shop-items{
+    padding: 10px;
+}
+
+@media (max-width: 1199px){
+    .header .mobile-menu-control,
+    .header .shop-items{
+        flex-basis: 100%;
+    }
+
+    .header .mobile-menu-control{
+        position: relative;
+        justify-content: center;
+    }
+
+    .header{
+        justify-content: left;
+    }
+
+    .mobile-menu-control button{
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-basis: 100%;
+        background-color: #ffffff;
+    }
+
+    .header{
+        position: relative;
+    }
+
+    .sticky_header{
+        position: fixed;
+    }
+
+    .header nav{
+        height: auto;
+        display: none;
+    }
+
+    .shop-items{
+        justify-content: right;
+        position: absolute;
+        right: 0;
+    }
+    
+}
+
+
+/* Main Content styles */
+
+.main-content{
+    width: 1200px;
+    padding-top: 50px; /* for sticky header */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1199px){
+
+    .main-content{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px; /* for sticky header */
+    }
+
+}
+
+
+/* Footer styles */
+
+.footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: row-reverse;
+}
+
+.copyright-policies,
+.social{
+    flex-basis: 50%;
+    justify-content: center;
+    display: flex;
+    min-height: 50px;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1199px){
+
+    .copyright-policies,
+    .social{
+        flex-basis: 100%;
+    }
+
+}
