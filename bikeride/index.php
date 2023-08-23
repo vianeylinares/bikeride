@@ -23,10 +23,15 @@
             ?>
             <article>
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <div><?php the_content(); ?></div>
+                <div><?php the_excerpt(); ?></div>
             </article>
             <?php
         endwhile;
+
+        the_posts_pagination( array(
+            'prev_text'		=> esc_html__( 'Previous', 'bikeride' ),
+            'next_text'		=> esc_html__( 'Next', 'bikeride' ),
+        ));
     else:
         ?>
         <p>Nothing to display</p>
