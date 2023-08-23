@@ -16,6 +16,16 @@ Tags:
     padding: 0;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #e0b1cb;
+  }
+
+  ::selection {
+    color: #000000;
+    background: #e0b1cb;
+  }
+
 /* Header styles */
 
 .header{
