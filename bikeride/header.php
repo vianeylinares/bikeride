@@ -16,6 +16,7 @@
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
+        <?php wp_body_open(); ?>
         <div class="main-wrapper">
             <header class="header sticky_header">
                 <div class="mobile-menu-control">
