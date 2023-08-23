@@ -15,7 +15,7 @@
         <title>Website title</title>
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <div class="main-wrapper">
             <header class="header sticky_header">
                 <div class="mobile-menu-control">
