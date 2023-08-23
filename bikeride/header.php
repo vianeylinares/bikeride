@@ -49,4 +49,4 @@
                     Store items
                 </div>
             </header>
-            <main class="main-content" style="min-height: 1200px;">
+            <main class="main-content">

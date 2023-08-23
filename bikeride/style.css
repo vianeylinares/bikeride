@@ -19,12 +19,13 @@ Tags:
 ::-moz-selection { /* Code for Firefox */
     color: #000000;
     background: #e0b1cb;
-  }
+}
 
-  ::selection {
+::selection {
     color: #000000;
     background: #e0b1cb;
-  }
+}
+
 
 /* Header styles */
 
@@ -33,7 +34,7 @@ Tags:
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    background-color: #ffffff;
+    background-color: #be95c4;
 }
 
 .sticky_header{
@@ -84,6 +85,10 @@ Tags:
     align-items: center;
 }
 
+.nav a{
+    color: #000000;
+}
+
 .nav-item,
 .shop-items{
     padding: 10px;
@@ -113,7 +118,7 @@ Tags:
     .nav-item{
         display: flex;
         flex-basis: 100%;
-        background-color: #ffffff;
+        background-color: #be95c4;
     }
 
     .header{
@@ -142,6 +147,7 @@ Tags:
 
 .main-content{
     width: 1200px;
+    min-height: 90vh;
     padding-top: 50px; /* for sticky header */
     margin: 0 auto;
     box-sizing: border-box;
