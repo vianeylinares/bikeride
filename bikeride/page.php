@@ -1,11 +1,11 @@
 <?php
 /**
- * The Page template file
+ * The tempplate for displaying all pages
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * This is a template that displays all pages by default.
+ * Please note all this is the WordPress construct of pages.
+ * and other 'pages' in your WordPress site may use a
+ * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
