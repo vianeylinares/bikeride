@@ -26,6 +26,20 @@ Tags:
     background: #e0b1cb;
 }
 
+.font-Nanum-Gothic{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.font-Pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    line-height: 120%;
+}
+
 
 /* Header styles */
 
