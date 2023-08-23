@@ -28,3 +28,11 @@ if( ! function_exists( 'wp_body_open' ) ){
     }
 
 }
+
+
+function bikeride_config(){
+
+    add_theme_support( 'title-tag' );
+
+}
+add_action( 'after_setup_theme', 'bikeride_config', 0 );
