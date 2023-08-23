@@ -28,23 +28,19 @@
                     </a>
                 </div>
                 <nav class="nav-menu">
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a href="">Item 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Item 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Item 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Item 4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">Item 5</a>
-                        </li>
-                    </ul>
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location'    => 'bikeride_main_menu',
+                                'depth'             => 5,
+                                'container'         => 'ul',
+                                'container_class'   => '',
+                                'container_id'      => '',
+                                'menu_class'        => 'nav',
+                                'add_li_class'      => 'nav-item'
+                            )
+                        );
+                    ?>
                 </nav>
                 <div class="shop-items">
                     Store items
