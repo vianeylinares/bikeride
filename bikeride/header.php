@@ -15,7 +15,7 @@
         <title>Website title</title>
         <?php wp_head(); ?>
     </head>
-    <body style="min-height: 1200px;">
+    <body>
         <div class="main-wrapper">
             <header class="header sticky_header">
                 <div class="mobile-menu-control">
@@ -49,4 +49,4 @@
                     Store items
                 </div>
             </header>
-            <main class="main-content">
+            <main class="main-content" style="min-height: 1200px;">

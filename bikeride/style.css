@@ -157,6 +157,7 @@ Tags:
     flex-wrap: wrap;
     align-content: center;
     flex-direction: row-reverse;
+    background-color: #231942;
 }
 
 .copyright-policies,
@@ -164,9 +165,17 @@ Tags:
     flex-basis: 50%;
     justify-content: center;
     display: flex;
-    min-height: 50px;
+    min-height: 70px;
     align-content: center;
     flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.social a{
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
 }
 
 @media (max-width: 1199px){
