@@ -14,6 +14,23 @@
 ?>
 <?php get_header(); ?>
 
-    Page main content area...
+<?php
+    // If there are any posts
+    if( have_posts() ):
+        // While posts loop
+        while( have_posts() ): the_post();
+            ?>
+            <article>
+                <h1><?php the_title(); ?></h1>
+                <div><?php the_content(); ?></div>
+            </article>
+            <?php
+        endwhile;
+    else:
+        ?>
+        <p>Nothing to display</p>
+        <?php
+    endif;
+?>
 
 <?php get_footer(); ?>
