@@ -23,7 +23,8 @@
                         <span></span>
                     </button>
                     <a href="" class="brand">
-                        <img src="" alt="" class="logo-image" alt="">
+                        <img src="" alt="" class="logo-image" style="display: none;" alt="">
+                        <span class="logo-text">The Bike Ride</span>
                     </a>
                 </div>
                 <nav class="nav-menu">

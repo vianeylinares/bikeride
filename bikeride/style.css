@@ -106,8 +106,18 @@ body{
 
 .header .brand{
     height: 50px;
-    width: 150px;
-    background-color: #000;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.header .logo-text{
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
 }
 
 .header nav{
