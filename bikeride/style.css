@@ -11,6 +11,9 @@ Licence URI: http://www.gnu.org/licences/gpl-2.0.html
 Tags: 
 */
 
+
+/* General styles */
+
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +41,69 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
     line-height: 120%;
+}
+
+p{
+    margin-bottom: .5em;
+}
+
+blockquote{
+    margin: 1em;
+}
+
+cite{
+    margin: 0 1.5em;
+}
+
+dd{
+    margin: 0 1em;
+}
+
+table{
+    margin: 1em auto;
+}
+
+ul,
+ol{
+    margin-bottom: .5em;
+}
+
+article ul li,
+article ol li{
+    margin-left: 1.8em;
+    margin-bottom: .2em;
+}
+
+article ul li{
+    list-style: disc;
+}
+
+code{
+    background-color: #d4d4d4;
+}
+
+pre{
+    text-wrap: wrap;
+    margin-bottom: .5em;
+}
+
+.main-content{
+    width: 1200px;
+    min-height: 90vh;
+    padding-top: 50px; /* for sticky header */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1199px){
+
+    .main-content{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px; /* for sticky header */
+    }
+
 }
 
 
@@ -202,28 +268,6 @@ body{
 }
 
 
-/* Main Content styles */
-
-.main-content{
-    width: 1200px;
-    min-height: 90vh;
-    padding-top: 50px; /* for sticky header */
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-@media (max-width: 1199px){
-
-    .main-content{
-        width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 50px; /* for sticky header */
-    }
-
-}
-
-
 /* Footer styles */
 
 .footer{
@@ -381,6 +425,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Pacifico', cursive;
     font-weight: normal;
     line-height: 150%;
+    margin-bottom: .3em;
 }
 
 h1{
@@ -422,7 +467,7 @@ a{
 }
 
 
-/* Blog styles */
+/* Blog and default pages styles */
 
 .blog .main-content article,
 .single-post .main-content article{
@@ -464,6 +509,10 @@ a{
 
 .blog .main-content{
     margin-bottom: 30px;
+}
+
+.page-template-default article{
+    margin-bottom: 3em;
 }
 
 @media (max-width: 767px){
