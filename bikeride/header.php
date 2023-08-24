@@ -23,8 +23,11 @@
                         <span></span>
                     </button>
                     <a href="" class="brand">
-                        <img src="" alt="" class="logo-image" style="display: none;" alt="">
-                        <span class="logo-text">The Bike Ride</span>
+                        <?php if( has_custom_logo() ): ?>
+                            <?php the_custom_logo(); ?>
+                        <?php else: ?>
+                            <span class="logo-text"><?php bloginfo( 'title' ); ?></span>
+                        <?php endif; ?>
                     </a>
                 </div>
                 <nav class="nav-menu">

@@ -148,6 +148,11 @@ body{
     padding: 10px;
 }
 
+.logo-image{
+    width: 150px;
+    height: auto;
+}
+
 @media (max-width: 1199px){
     .header .mobile-menu-control,
     .header .shop-items{
