@@ -402,6 +402,13 @@ h6{
     font-size: 16px;
 }
 
+.page-title{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #4c378d;
+}
+
 
 /* General links styles */
 
@@ -423,5 +430,65 @@ a{
 }
 
 .blog article p{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+}
+
+.blog-and-sidebar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-items{
+    flex-basis: 80%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.blog-sidebar{
+    flex-basis: 20%;
+}
+
+.blog .main-content{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px){
+
+    .blog-items,
+    .blog-sidebar{
+        flex-basis: 100%;
+        padding-right: 0;
+    }
+
+}
+
+
+/* Sidebar styles */
+
+.blog-sidebar h2{
+    margin-bottom: 10px;
+}
+
+.blog-sidebar ul{
+    margin-bottom: 30px;
+}
+
+.blog-sidebar #searchform input[type=text],
+.blog-sidebar #searchform input[type=submit]{
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.blog-sidebar #searchform input[type=text]{
+    border: 2px solid #4c378d;
+    color: #4c378d;
+}
+
+.blog-sidebar #searchform input[type=submit]{
+    background-color: #4c378d;
+    color: #ffffff;
 }
