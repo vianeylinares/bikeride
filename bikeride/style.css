@@ -518,3 +518,52 @@ a{
 .single-post .blog-sidebar{
     padding-top: 100px;
 }
+
+
+/* Comments styles */
+
+.comments-area{
+    margin-bottom: 30px;
+}
+
+.comments-title,
+.comment-reply-title{
+    margin-bottom: .5em;
+}
+
+.comments-area a{
+    text-decoration: underline;
+}
+
+.comment-body p,
+.comment-respond p{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.comment-list{
+    margin-bottom: 30px;
+}
+
+.comment-list li{
+    margin-left: 50px;
+}
+
+.comment-form-comment label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-respond textarea,
+.comment-respond input[type=submit]{
+    border: 2px solid #4c378d;
+    padding: 5px;
+    width: 300px;
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.comment-respond input[type=submit]{
+    background-color: #4c378d;
+    color: #ffffff;
+}
