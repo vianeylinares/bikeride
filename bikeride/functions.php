@@ -53,3 +53,24 @@ function bikeride_menu_add_class_on_li($classes, $item, $args) {
 
 }
 add_filter('nav_menu_css_class', 'bikeride_menu_add_class_on_li', 1, 3);
+
+
+/**
+ * Registers a widget area.
+ *
+ * @link https://developer.wordpress.org/reference/functions/register_sidebar/
+ *
+ */
+
+function bikeride_sidebars(){
+	register_sidebar( array(
+		'name'			=> esc_html__( 'Bike Ride Blog Sidebar', 'bikeride' ),
+		'id'			=> 'bikeride-sidebar-1',
+		'description'	=> esc_html__( 'Drag and drop your widgets here', 'bikeride' ),
+		'before_widget'	=> '<div id="%1$s" class="widget %2$s widget-wrapper">',
+		'after_widget'	=> '</div>',
+		'before_title'	=> '<h4 class="widget-title">',
+		'after_title'	=> '</h4>',
+	) );
+}
+add_action( 'widgets_init', 'bikeride_sidebars' );
