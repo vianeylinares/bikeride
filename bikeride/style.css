@@ -417,9 +417,10 @@ a{
 }
 
 
-/* index.php styles */
+/* Blog styles */
 
-.blog .main-content article{
+.blog .main-content article,
+.single-post .main-content article{
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -429,8 +430,16 @@ a{
     text-align: center;
 }
 
-.blog article p{
+.blog article p,
+.single-post article p,
+.single-post article ul{
     margin-bottom: 1em;
+}
+
+.single-post article ul li{
+    margin-left: 50px;
+    list-style: disc;
+    margin-bottom: .5em;
 }
 
 .blog-and-sidebar{
@@ -491,4 +500,8 @@ a{
 .blog-sidebar #searchform input[type=submit]{
     background-color: #4c378d;
     color: #ffffff;
+}
+
+.single-post .blog-sidebar{
+    padding-top: 100px;
 }
