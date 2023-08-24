@@ -482,8 +482,18 @@ a{
     margin-bottom: 30px;
 }
 
+.blog-sidebar .wp-block-search__inside-wrapper{
+    flex-wrap: wrap;
+}
+
+.blog-sidebar .wp-block-search__button{
+    margin-left: 0;
+}
+
 .blog-sidebar #searchform input[type=text],
-.blog-sidebar #searchform input[type=submit]{
+.blog-sidebar #searchform input[type=submit],
+.blog-sidebar .wp-block-search input[type=search],
+.blog-sidebar .wp-block-search button[type=submit]{
     height: 30px;
     padding-left: 5px;
     padding-right: 5px;
@@ -492,14 +502,17 @@ a{
     box-sizing: border-box;
 }
 
-.blog-sidebar #searchform input[type=text]{
+.blog-sidebar #searchform input[type=text],
+.blog-sidebar .wp-block-search input[type=search]{
     border: 2px solid #4c378d;
     color: #4c378d;
 }
 
-.blog-sidebar #searchform input[type=submit]{
+.blog-sidebar #searchform input[type=submit],
+.blog-sidebar .wp-block-search button[type=submit]{
     background-color: #4c378d;
     color: #ffffff;
+    border: none;
 }
 
 .single-post .blog-sidebar{
