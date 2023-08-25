@@ -19,9 +19,13 @@
     if( have_posts() ):
         // While posts loop
         while( have_posts() ): the_post();
+            $disable_title = ( get_post_meta( get_the_ID(), 'disable_title', true ) ) ? esc_html( get_post_meta( get_the_ID(), 'disable_title', true ) ) : 0 ;
+            $disable_title_is_checked = ( $disable_title != 0 ) ? true : false;
             ?>
             <article>
-                <h1 class="page-title"><?php the_title(); ?></h1>
+                <?php if( ! $disable_title_is_checked ): ?>
+                    <h1 class="page-title"><?php the_title(); ?></h1>
+                <?php endif; ?>
                 <div><?php the_content(); ?></div>
             </article>
             <?php

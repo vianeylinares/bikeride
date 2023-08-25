@@ -96,3 +96,49 @@ function bikeride_logo_class(){
 
 }
 add_filter( 'get_custom_logo', 'bikeride_logo_class' );
+
+
+function bikeride_page_settings_metabox(){
+
+    add_meta_box(
+        'bikeride_page_settings_metabox',
+        'Bikeride page settings',
+        'bikeride_page_settings_callback',
+        'page'
+    );
+
+}
+add_action( 'add_meta_boxes', 'bikeride_page_settings_metabox' );
+
+
+function bikeride_page_settings_callback($post){
+
+    wp_nonce_field( basename(__FILE__), 'Bikeride_page_settings_nonce' );
+
+    $disable_title = ( get_post_meta( $post->ID, 'disable_title', true ) ) ? esc_html( get_post_meta( $post->ID, 'disable_title', true ) ) : 0 ;
+    $disable_title_is_checked = ( $disable_title != 0 ) ? 'checked' : '';
+
+    ?>
+
+        <div>
+            <input type="checkbox" name="disable_title" value="<?php echo $post->ID; ?>" <?php echo $disable_title_is_checked; ?> /> Disable title
+        </div>
+
+    <?php
+
+}
+
+function bikeride_meta_save($post_id){
+
+    $is_autosave = wp_is_post_autosave($post_id);
+    $is_revision = wp_is_post_revision($post_id);
+    $is_valid_nonce = ( isset($_POST['Bikeride_page_settings_nonce'] ) && wp_verify_nonce( $_POST['Bikeride_page_settings_nonce'], basename(__FILE__) ) ) ? "true" : "false";
+
+    if( $is_autosave || $is_revision || !$is_valid_nonce ){
+        return;
+    }
+
+    update_post_meta( $post_id, 'disable_title', $_POST['disable_title'] );
+
+}
+add_action( 'save_post', 'bikeride_meta_save' );
