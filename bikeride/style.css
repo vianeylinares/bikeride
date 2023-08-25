@@ -516,6 +516,16 @@ a{
     margin-bottom: 3em;
 }
 
+.post-thumbnail{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.post-thumbnail img{
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 767px){
 
     .blog-items,

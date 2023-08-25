@@ -19,6 +19,13 @@
                     ?>
                     <article <?php post_class(); ?>>
                         <h1 class="page-title"><?php the_title(); ?></h1>
+                        <div class="post-thumbnail">
+                            <?php
+                            if( has_post_thumbnail() ):
+                                the_post_thumbnail();
+                            endif;
+                            ?>
+                        </div>
                         <div><?php the_content(); ?></div>
                         <div class="meta">
                             <p><?php esc_html_e( 'Published by', 'bikeride' ); ?> <?php the_author_posts_link(); ?>
