@@ -9,6 +9,12 @@
  */
 
 
+ /**
+ * Customizer additions.
+ */
+require_once get_template_directory() . '/inc/customizer.php';
+
+
 function bikeride_scripts(){
 
     wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css', 'all' );
