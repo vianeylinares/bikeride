@@ -41,6 +41,7 @@ body{
     font-family: 'Nanum Gothic', sans-serif;
     font-size: 16px;
     line-height: 120%;
+    background-color: #ffffff;
 }
 
 p{
@@ -180,6 +181,7 @@ pre{
     justify-content: center;
     align-items: center;
     color: #000000;
+    text-decoration: none;
 }
 
 .header .logo-text{
@@ -208,11 +210,16 @@ pre{
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .nav-item,
 .shop-items{
     padding: 10px;
+}
+
+.nav-item{
+    list-style: none;
 }
 
 .logo-image{
