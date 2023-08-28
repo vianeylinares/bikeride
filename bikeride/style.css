@@ -639,3 +639,16 @@ a{
     background-color: #4c378d;
     color: #ffffff;
 }
+
+
+/* Elementor styles */
+
+.elementor-widget-text-editor ul{
+    margin-bottom: 20px;
+}
+
+.elementor-widget-text-editor ul li{
+    list-style: disc;
+    margin-left: 35px;
+    margin-bottom: 5px;
+}
