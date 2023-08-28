@@ -652,3 +652,27 @@ a{
     margin-left: 35px;
     margin-bottom: 5px;
 }
+
+
+/* 404 styles */
+
+body.error404 .main-content{
+    display: flex;
+}
+
+.error-404{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.not-found-texts{
+    flex-basis: 100%;
+    margin-bottom: 50px;;
+}
+
+.recent-entries{
+    flex-basis: 100%;
+}
