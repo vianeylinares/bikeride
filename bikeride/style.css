@@ -504,6 +504,7 @@ a{
 .blog-and-sidebar{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .blog-items{
