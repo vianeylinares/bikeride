@@ -148,3 +148,27 @@ function bikeride_meta_save($post_id){
 
 }
 add_action( 'save_post', 'bikeride_meta_save' );
+
+
+function bikeride_frontend_styles(){
+    ?>
+
+    <style>
+
+        <?php
+
+            if( get_theme_mod( 'set_sticky_menu' ) == true ){
+                ?>
+                    .main-content{
+                        padding-top: 50px;
+                    }
+                <?php
+            }
+
+        ?>
+
+    </style>
+
+    <?php
+}
+add_action( 'wp_head', 'bikeride_frontend_styles', 999 );

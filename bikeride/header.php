@@ -17,7 +17,8 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
         <div class="main-wrapper">
-            <header class="header sticky_header">
+            <?php $sticky_menu = ( get_theme_mod( 'set_sticky_menu', 0 ) )? 'sticky_header' : '' ; ?>
+            <header class="header <?php echo $sticky_menu; ?>">
                 <div class="mobile-menu-control">
                     <button id="menu-toggle" type="button">
                         <span></span>

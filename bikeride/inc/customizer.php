@@ -117,5 +117,36 @@ function bikeride_customizer( $wp_customize ){
 				)
 			);
 
+    // Sticky menu section
+
+	$wp_customize->add_section(
+		'sec_sticky_menu', array(
+			'title'         => __( 'Sticky Menu Settings', 'bikeride' ),
+			'description'   => __( 'Sticky Menu Section', 'bikeride' )
+		)
+	);
+
+            // Enable sticky menu
+			$wp_customize->add_setting(
+				'set_sticky_menu', array(
+					'type'                  => 'theme_mod',
+					'default'               => '',
+					'sanitize_callback'     => 'bikeride_sanitize_checkbox'
+				)
+			);
+
+			$wp_customize->add_control(
+				'set_sticky_menu', array(
+					'label'         => __( 'Show Sticky Menu?', 'bikeride' ),
+					'section'       => 'sec_sticky_menu',
+					'type'          => 'checkbox'
+				)
+			);
+
 }
 add_action( 'customize_register', 'bikeride_customizer' );
+
+
+function bikeride_sanitize_checkbox( $checked ){
+	return ( ( isset ( $checked ) && true == $checked ) ? true : false );
+}
