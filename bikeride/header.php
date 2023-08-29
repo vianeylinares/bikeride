@@ -17,8 +17,11 @@
     <body <?php body_class(); ?>>
         <?php wp_body_open(); ?>
         <div class="main-wrapper">
-            <?php $sticky_menu = ( get_theme_mod( 'set_sticky_menu', 0 ) )? 'sticky_header' : '' ; ?>
-            <header class="header <?php echo $sticky_menu; ?>">
+            <?php
+                $menu_options = ( get_post_meta( $post->ID, 'content_behind_menu', true ) )? 'header-over-content' : '' ;
+                $menu_options .= ( get_theme_mod( 'set_sticky_menu', 0 ) )? ' sticky-header' : '' ;
+            ?>
+            <header id="header" class="header <?php echo $menu_options; ?>">
                 <div class="mobile-menu-control">
                     <button id="menu-toggle" type="button">
                         <span></span>

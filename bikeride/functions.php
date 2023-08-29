@@ -123,11 +123,14 @@ function bikeride_page_settings_callback($post){
 
     $disable_title = ( get_post_meta( $post->ID, 'disable_title', true ) ) ? esc_html( get_post_meta( $post->ID, 'disable_title', true ) ) : 0 ;
     $disable_title_is_checked = ( $disable_title != 0 ) ? 'checked' : '';
+    $content_behind_menu = ( get_post_meta( $post->ID, 'content_behind_menu', true ) ) ? esc_html( get_post_meta( $post->ID, 'content_behind_menu', true ) ) : 0 ;
+    $content_behind_menu_checked = ( $content_behind_menu != 0 ) ? 'checked' : '';
 
     ?>
 
         <div>
-            <input type="checkbox" name="disable_title" value="<?php echo $post->ID; ?>" <?php echo $disable_title_is_checked; ?> /> Disable title
+            <input type="checkbox" name="disable_title" value="<?php echo $post->ID; ?>" <?php echo $disable_title_is_checked; ?> /> Disable title<br/>
+            <input type="checkbox" name="content_behind_menu" value="<?php echo $post->ID; ?>" <?php echo $content_behind_menu_checked; ?> /> Content behind menu
         </div>
 
     <?php
@@ -145,6 +148,7 @@ function bikeride_meta_save($post_id){
     }
 
     update_post_meta( $post_id, 'disable_title', $_POST['disable_title'] );
+    update_post_meta( $post_id, 'content_behind_menu', $_POST['content_behind_menu'] );
 
 }
 add_action( 'save_post', 'bikeride_meta_save' );
@@ -157,10 +161,23 @@ function bikeride_frontend_styles(){
 
         <?php
 
+            global $post;
+
             if( get_theme_mod( 'set_sticky_menu' ) == true ){
                 ?>
                     .main-content{
                         padding-top: 50px;
+                    }
+                <?php
+            }
+
+            if( get_post_meta( $post->ID, 'content_behind_menu', true ) != 0 ){
+                ?>
+                    .header{
+                        background-color: transparent;
+                    }
+                    .main-content{
+                        padding-top: 0;
                     }
                 <?php
             }

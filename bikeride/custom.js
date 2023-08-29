@@ -40,3 +40,17 @@ window.addEventListener( 'resize', function monitorWidth(){
     }
 
 } );
+
+window.addEventListener( 'scroll', function fixedHeaderBackground(){
+
+    the_header = document.getElementById('header');
+
+    if( the_header.classList.contains('header-over-content') && window.scrollY >= 150 ){
+        the_header.style.backgroundColor = '#be95c4';
+    }
+
+    if( the_header.classList.contains('header-over-content') && window.scrollY <= 149 ){
+        the_header.style.backgroundColor = 'transparent';
+    }
+
+} );

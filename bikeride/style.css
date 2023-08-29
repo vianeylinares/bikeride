@@ -116,8 +116,8 @@ pre{
     background-color: #be95c4;
 }
 
-.sticky_header{
-    position: fixed;
+.sticky-header{
+    position: fixed !important;
     width: 100%;
     z-index: 100;
 }
