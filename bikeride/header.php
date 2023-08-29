@@ -26,7 +26,7 @@
                     <button id="menu-toggle" type="button">
                         <span></span>
                     </button>
-                    <a href="" class="brand">
+                    <a href="<?php echo home_url(); ?>" class="brand">
                         <?php if( has_custom_logo() ): ?>
                             <?php the_custom_logo(); ?>
                         <?php else: ?>
