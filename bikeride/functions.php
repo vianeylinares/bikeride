@@ -14,6 +14,11 @@
  */
 require_once get_template_directory() . '/inc/customizer.php';
 
+/**
+ * Elementor additions.
+ */
+require_once get_template_directory() . '/elementor/register.php';
+
 
 function bikeride_scripts(){
 
