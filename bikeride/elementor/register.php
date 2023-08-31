@@ -1,13 +1,15 @@
 <?php
 
-function bikeride_register_heading_widget( $widgets_manager ) {
+function bikeride_register_widgets( $widgets_manager ) {
 
     require_once get_template_directory() . '/elementor/widgets/heading.php';
+    require_once get_template_directory() . '/elementor/widgets/news.php';
 
     $widgets_manager->register( new \Bikeride_Headging_Widget() );
+    $widgets_manager->register( new \Bikeride_News_Widget() );
 
 }
-add_action( 'elementor/widgets/register', 'bikeride_register_heading_widget' );
+add_action( 'elementor/widgets/register', 'bikeride_register_widgets' );
 
 
 function bikeride_add_elementor_widget_category( $elements_manager ) {
