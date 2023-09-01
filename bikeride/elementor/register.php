@@ -4,9 +4,11 @@ function bikeride_register_widgets( $widgets_manager ) {
 
     require_once get_template_directory() . '/elementor/widgets/heading.php';
     require_once get_template_directory() . '/elementor/widgets/news.php';
+    require_once get_template_directory() . '/elementor/widgets/know.php';
 
     $widgets_manager->register( new \Bikeride_Headging_Widget() );
     $widgets_manager->register( new \Bikeride_News_Widget() );
+    $widgets_manager->register( new \Bikeride_Know_Widget() );
 
 }
 add_action( 'elementor/widgets/register', 'bikeride_register_widgets' );
