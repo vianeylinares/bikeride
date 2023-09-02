@@ -746,6 +746,27 @@ a{
     font-size: 14px;
 }
 
+.elem-hotel-box{
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #4c378d;
+}
+
+.hotel-space-name{
+    font-weight: bold;
+    color: #4c378d;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.hotel-space-address,
+.hotel-space-phone{
+    margin-bottom: 5px;
+}
+
+.no-border-bottom .elem-hotel-box{
+    border-bottom: none;
+}
+
 
 /* 404 styles */
 
