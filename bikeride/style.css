@@ -726,6 +726,26 @@ a{
     color: #4c378d;
 }
 
+.testimonial-space-description{
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-space-description:before{
+    content: "\"";
+    font-size: 40px;
+}
+
+.testimonial-space-name{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #4c378d;
+}
+
+.elem-testimonial-box p{
+    font-size: 14px;
+}
+
 
 /* 404 styles */
 
