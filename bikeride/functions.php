@@ -142,18 +142,26 @@ function bikeride_page_settings_callback($post){
 
 }
 
-function bikeride_meta_save($post_id){
+function bikeride_meta_save( $post_id ){
 
-    $is_autosave = wp_is_post_autosave($post_id);
-    $is_revision = wp_is_post_revision($post_id);
-    $is_valid_nonce = ( isset($_POST['Bikeride_page_settings_nonce'] ) && wp_verify_nonce( $_POST['Bikeride_page_settings_nonce'], basename(__FILE__) ) ) ? "true" : "false";
+    if ( wp_verify_nonce( $_POST['_inline_edit'], 'inlineeditnonce' ) )
+        return;
+
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST['Bikeride_page_settings_nonce'] ) && wp_verify_nonce( $_POST['Bikeride_page_settings_nonce'], basename(__FILE__) ) ) ? "true" : "false";
 
     if( $is_autosave || $is_revision || !$is_valid_nonce ){
         return;
     }
 
-    update_post_meta( $post_id, 'disable_title', $_POST['disable_title'] );
-    update_post_meta( $post_id, 'content_behind_menu', $_POST['content_behind_menu'] );
+    if( isset( $_POST['disable_title'] ) ){
+        update_post_meta( $post_id, 'disable_title', $_POST['disable_title'] );
+    }
+
+    if( isset( $_POST['content_behind_menu'] ) ){
+        update_post_meta( $post_id, 'content_behind_menu', $_POST['content_behind_menu'] );
+    }
 
 }
 add_action( 'save_post', 'bikeride_meta_save' );
