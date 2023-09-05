@@ -9,6 +9,7 @@ function bikeride_register_widgets( $widgets_manager ) {
     require_once get_template_directory() . '/elementor/widgets/testimonial.php';
     require_once get_template_directory() . '/elementor/widgets/hotel.php';
     require_once get_template_directory() . '/elementor/widgets/pos.php';
+    require_once get_template_directory() . '/elementor/widgets/imagepop.php';
 
     $widgets_manager->register( new \Bikeride_Headging_Widget() );
     $widgets_manager->register( new \Bikeride_News_Widget() );
@@ -17,6 +18,7 @@ function bikeride_register_widgets( $widgets_manager ) {
     $widgets_manager->register( new \Bikeride_Testimonial_Widget() );
     $widgets_manager->register( new \Bikeride_Hotel_Widget() );
     $widgets_manager->register( new \Bikeride_POS_Widget() );
+    $widgets_manager->register( new \Bikeride_ImagePop_Widget() );
 
 }
 add_action( 'elementor/widgets/register', 'bikeride_register_widgets' );

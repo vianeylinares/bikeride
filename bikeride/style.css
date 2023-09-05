@@ -828,6 +828,21 @@ a{
     border-bottom-right-radius: 5px;
 }
 
+.image-with-popup-dialog{
+    width: 100%;
+    max-width: 500px;
+    background-color: #000000;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.image-with-popup-dialog img{
+    width: 100%;
+}
+
 @media (max-width: 767px){
     .pos-location-item{
         flex-basis: 100%;
