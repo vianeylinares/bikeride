@@ -51,13 +51,13 @@ function bikeride_config(){
 
     add_theme_support( 'title-tag' );
 
-    add_theme_support( 'custom-logo', array(
+    /*add_theme_support( 'custom-logo', array(
             'height'        => 50,
             'width'         => 200,
             'flex-height'   => true,
             'flex-width'    => true
         )
-    );
+    );*/
 
     add_theme_support( 'post-thumbnails' );
 
@@ -106,7 +106,7 @@ function bikeride_logo_class(){
     return $html;
 
 }
-add_filter( 'get_custom_logo', 'bikeride_logo_class' );
+//add_filter( 'get_custom_logo', 'bikeride_logo_class' );
 
 
 function bikeride_page_settings_metabox(){
@@ -130,12 +130,16 @@ function bikeride_page_settings_callback($post){
     $disable_title_is_checked = ( $disable_title != 0 ) ? 'checked' : '';
     $content_behind_menu = ( get_post_meta( $post->ID, 'content_behind_menu', true ) ) ? esc_html( get_post_meta( $post->ID, 'content_behind_menu', true ) ) : 0 ;
     $content_behind_menu_checked = ( $content_behind_menu != 0 ) ? 'checked' : '';
+    $white_logo = ( get_post_meta( $post->ID, 'white_logo', true ) ) ? esc_html( get_post_meta( $post->ID, 'white_logo', true ) ) : 0 ;
+    $white_logo_checked = ( $white_logo != 0 ) ? 'checked' : '';
 
     ?>
 
         <div>
             <input type="checkbox" name="disable_title" value="<?php echo $post->ID; ?>" <?php echo $disable_title_is_checked; ?> /> Disable title<br/>
-            <input type="checkbox" name="content_behind_menu" value="<?php echo $post->ID; ?>" <?php echo $content_behind_menu_checked; ?> /> Content behind menu
+            <input type="checkbox" name="content_behind_menu" value="<?php echo $post->ID; ?>" <?php echo $content_behind_menu_checked; ?> /> Transparent menu bar<br/>
+            <input type="checkbox" name="white_logo" value="<?php echo $post->ID; ?>" <?php echo $white_logo_checked; ?> /> White color logo and menu bar text
+            <input type="hidden" name="page_settings" value="<?php echo $post->ID; ?>" />
         </div>
 
     <?php
@@ -155,12 +159,10 @@ function bikeride_meta_save( $post_id ){
         return;
     }
 
-    if( isset( $_POST['disable_title'] ) ){
+    if( isset( $_POST['page_settings'] ) ){
         update_post_meta( $post_id, 'disable_title', $_POST['disable_title'] );
-    }
-
-    if( isset( $_POST['content_behind_menu'] ) ){
         update_post_meta( $post_id, 'content_behind_menu', $_POST['content_behind_menu'] );
+        update_post_meta( $post_id, 'white_logo', $_POST['white_logo'] );
     }
 
 }

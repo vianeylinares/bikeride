@@ -20,6 +20,7 @@
             <?php
                 $menu_options = ( get_post_meta( $post->ID, 'content_behind_menu', true ) )? 'header-over-content' : '' ;
                 $menu_options .= ( get_theme_mod( 'set_sticky_menu', 0 ) )? ' sticky-header' : '' ;
+                $menu_options .= ( get_post_meta( $post->ID, 'white_logo', true ) )? ' white-logo-and-header-text' : '' ;
             ?>
             <header id="header" class="header <?php echo $menu_options; ?>">
                 <div class="mobile-menu-control">
@@ -27,8 +28,12 @@
                         <span></span>
                     </button>
                     <a href="<?php echo home_url(); ?>" class="brand">
-                        <?php if( has_custom_logo() ): ?>
-                            <?php the_custom_logo(); ?>
+                        <?php if( !empty( get_theme_mod( 'set_logo_black' ) ) || !empty( get_theme_mod( 'set_logo_white' ) ) ):
+                            $white_logo = ( get_post_meta( $post->ID, 'white_logo', true ) ) ? esc_html( get_post_meta( $post->ID, 'white_logo', true ) ) : 0 ;
+                            $white_logo_checked = ( $white_logo != 0 ) ? 'checked' : '';
+                            $logo = ( $white_logo !=0 )? "white" : "black" ;
+                            ?>
+                            <img src="<?php echo wp_get_attachment_url( get_theme_mod( 'set_logo_' . $logo ) ); ?>" alt="logo" />
                         <?php else: ?>
                             <span class="logo-text"><?php bloginfo( 'title' ); ?></span>
                         <?php endif; ?>

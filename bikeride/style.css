@@ -122,6 +122,18 @@ pre{
     z-index: 100;
 }
 
+.white-logo-and-header-text,
+.white-logo-and-header-text nav a,
+.white-logo-and-header-text .shop-items{
+    color: #ffffff;
+}
+
+.header.white-logo-and-header-text button span,
+.header.white-logo-and-header-text button span::before,
+.header.white-logo-and-header-text button span::after{
+    background-color: #ffffff;
+}
+
 .header .mobile-menu-control,
 .header .shop-items{
     display: flex;

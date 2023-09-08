@@ -143,6 +143,57 @@ function bikeride_customizer( $wp_customize ){
 				)
 			);
 
+	// Logo
+
+	$wp_customize->add_section(
+		'sec_logo', array(
+			'title'         => __( 'Logo Settings', 'bikeride' ),
+			'description'   => __( 'Logo Section', 'bikeride' )
+		)
+	);
+
+			// Logo black
+			$wp_customize->add_setting(
+				'set_logo_black',
+				array(
+					'type'                  => 'theme_mod',
+					'sanitize_callback'     => 'absint'
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Media_Control(
+					$wp_customize,
+					'set_logo_black',
+					array(
+						'label'     => __( 'Logo black', 'bikeride' ),
+						'section'   => 'sec_logo',
+						'mime_type' => 'image'
+					)
+				)
+			);
+
+			// Logo white
+			$wp_customize->add_setting(
+				'set_logo_white',
+				array(
+					'type'                  => 'theme_mod',
+					'sanitize_callback'     => 'absint'
+				)
+			);
+
+			$wp_customize->add_control(
+				new WP_Customize_Media_Control(
+					$wp_customize,
+					'set_logo_white',
+					array(
+						'label'     => __( 'Logo white', 'bikeride' ),
+						'section'   => 'sec_logo',
+						'mime_type' => 'image'
+					)
+				)
+			);
+
 }
 add_action( 'customize_register', 'bikeride_customizer' );
 
