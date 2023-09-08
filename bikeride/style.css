@@ -122,6 +122,15 @@ pre{
     z-index: 100;
 }
 
+.header-over-content{
+    height: 0;
+    z-index: 100;
+}
+
+.sticky-header.header-over-content{
+    height: auto;
+}
+
 .white-logo-and-header-text,
 .white-logo-and-header-text nav a,
 .white-logo-and-header-text .shop-items{
