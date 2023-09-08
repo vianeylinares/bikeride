@@ -24,7 +24,7 @@ class Bikeride_Testimonial_Widget extends \Elementor\Widget_Base{
      * @return string Widget name.
      */
     public function get_name(){
-        return 'Bikeride testimonial';
+        return 'bikeride-testimonial';
     }
 
 
