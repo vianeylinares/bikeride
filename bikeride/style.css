@@ -454,6 +454,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: normal;
     line-height: 150%;
     margin-bottom: .3em;
+    word-wrap: break-word;
 }
 
 h1{
@@ -492,6 +493,7 @@ h6{
 
 a{
     color: #4c378d;
+    word-wrap: break-word;
 }
 
 
@@ -531,6 +533,7 @@ a{
     flex-basis: 80%;
     padding-right: 20px;
     box-sizing: border-box;
+    width: 80%;
 }
 
 .blog-sidebar{
@@ -555,12 +558,17 @@ a{
     height: auto;
 }
 
+.sticky{
+    background-color: #E0B1CB;
+}
+
 @media (max-width: 767px){
 
     .blog-items,
     .blog-sidebar{
         flex-basis: 100%;
         padding-right: 0;
+        width: 100%;
     }
 
 }
