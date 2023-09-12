@@ -224,7 +224,7 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
 
 		$this->add_render_attribute( 'list', 'class', 'elementor-list-widget' );
 		?>
-		<div>
+		<div style="text-align: center;">
             <a class="popup-with-zoom-anim" href="#small-dialog-<?php echo $br_random; ?>" >
                 <?php
                     // Get image URL
