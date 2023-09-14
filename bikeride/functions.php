@@ -49,6 +49,9 @@ function bikeride_config(){
         )
     );
 
+    $textdomain = 'bikeride';
+    load_theme_textdomain( $textdomain, get_template_directory() . '/languages/' );
+
     add_theme_support( 'title-tag' );
 
     /*add_theme_support( 'custom-logo', array(
@@ -65,7 +68,7 @@ function bikeride_config(){
 add_action( 'after_setup_theme', 'bikeride_config', 0 );
 
 
-function bikeride_menu_add_class_on_li($classes, $item, $args) {
+function bikeride_menu_add_class_on_li( $classes, $item, $args ) {
 
     if(isset($args->add_li_class)) {
         $classes[] = $args->add_li_class;
@@ -73,7 +76,7 @@ function bikeride_menu_add_class_on_li($classes, $item, $args) {
     return $classes;
 
 }
-add_filter('nav_menu_css_class', 'bikeride_menu_add_class_on_li', 1, 3);
+add_filter( 'nav_menu_css_class', 'bikeride_menu_add_class_on_li', 1, 3 );
 
 
 /**
@@ -122,7 +125,7 @@ function bikeride_page_settings_metabox(){
 add_action( 'add_meta_boxes', 'bikeride_page_settings_metabox' );
 
 
-function bikeride_page_settings_callback($post){
+function bikeride_page_settings_callback( $post ){
 
     wp_nonce_field( basename(__FILE__), 'Bikeride_page_settings_nonce' );
 

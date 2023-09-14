@@ -47,7 +47,7 @@ the_archive_title( '<h1 class="page-title">', '</h1>' );
                 ));
             else:
                 ?>
-                <p>Nothing to display</p>
+                <p><?php esc_html_e( 'Nothing to display', 'bikeride' ); ?></p>
                 <?php
             endif;
 

@@ -54,7 +54,7 @@
                         );
                     ?>
                 </nav>
-                <div class="shop-items">
+                <div class="shop-items" style="color: transparent;">
                     Store items
                 </div>
             </header>

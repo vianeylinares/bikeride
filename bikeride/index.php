@@ -14,7 +14,7 @@
 ?>
 <?php get_header(); ?>
 
-<h1 class="page-title"><?php echo __( 'News', 'bikeride' ); ?></h1>
+<h1 class="page-title"><?php echo esc_html__( 'News', 'bikeride' ); ?></h1>
 
 <div class="blog-and-sidebar">
     <div class="blog-items">
@@ -26,7 +26,7 @@
                 while( have_posts() ): the_post();
                     ?>
                     <article <?php post_class(); ?>>
-                        <h2><a href="<?php the_permalink(); ?>"><?php echo ( !empty( get_the_title() ) )? get_the_title() : "Entry - " . esc_html( get_the_date() ) ; ?></a></h2>
+                        <h2><a href="<?php the_permalink(); ?>"><?php echo ( !empty( get_the_title() ) )? esc_html( get_the_title() ) : "Entry - " . esc_html( get_the_date() ) ; ?></a></h2>
                         <div><?php the_excerpt(); ?></div>
                         <div class="meta">
                             <p><?php esc_html_e( 'Published by', 'bikeride' ); ?> <?php the_author_posts_link(); ?>
@@ -51,7 +51,7 @@
                 ));
             else:
                 ?>
-                <p>Nothing to display</p>
+                <p><?php esc_html_e( 'Nothing to display', 'bikeride' ); ?></p>
                 <?php
             endif;
 

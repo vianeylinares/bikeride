@@ -18,7 +18,7 @@
                 while( have_posts() ): the_post();
                     ?>
                     <article <?php post_class(); ?>>
-                        <h1 class="page-title"><?php echo ( !empty( get_the_title() ) )? get_the_title() : "Entry - " . get_the_date() ; ?></h1>
+                        <h1 class="page-title"><?php echo ( !empty( get_the_title() ) )? esc_html( get_the_title() ) : "Entry - " . esc_html( get_the_date() ) ; ?></h1>
                         <div class="post-thumbnail">
                             <?php
                             if( has_post_thumbnail() ):
@@ -49,7 +49,7 @@
                 endwhile;
             else:
                 ?>
-                <p>Nothing to display</p>
+                <p><?php esc_html_e( 'Nothing to display', 'bikeride' ); ?></p>
                 <?php
             endif;
         ?>

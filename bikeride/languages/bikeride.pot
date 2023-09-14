@@ -1,0 +1,535 @@
+# Blank WordPress Pot
+# Copyright 2014 ...
+# This file is distributed under the GNU General Public License v3 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: "
+"Bikeride Pot v1.0.0\n"
+"POT-Creation-Date: "
+"2023-09-13 17:29-0700\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Your "
+"Name <you@example.com>\n"
+"Language-Team: Your Team "
+"<translations@example."
+"com>\n"
+"Report-Msgid-Bugs-To: "
+"Translator Name "
+"<translations@example."
+"com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/"
+"plain; charset=UTF-8\n"
+"Content-Transfer-"
+"Encoding: 8bit\n"
+"Plural-Forms: "
+"nplurals=2; plural=n != "
+"1;\n"
+"X-Textdomain-Support: "
+"yesX-Generator: Poedit "
+"1.6.4\n"
+"X-Poedit-SourceCharset: "
+"UTF-8\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;"
+"esc_html_x:1,2c;"
+"esc_html__;esc_attr_e;"
+"esc_attr_x:1,2c;"
+"esc_attr__;_ex:1,2c;"
+"_nx:4c,1,2;"
+"_nx_noop:4c,1,2;_x:1,2c;"
+"_n:1,2;_n_noop:1,2;"
+"__ngettext:1,2;"
+"__ngettext_noop:1,2;_c,"
+"_nc:4c,1,2\n"
+"X-Poedit-Basepath: ..\n"
+"Language: en_US\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-"
+"SearchPath-0: .\n"
+
+#: 404.php:13
+msgid "Page not found"
+msgstr ""
+
+#: 404.php:14
+msgid ""
+"Unfortunately, the page "
+"you tried to reach does "
+"not exist on this site"
+msgstr ""
+
+#: 404.php:20
+msgid ""
+"Take a Look at Our "
+"Latest Posts"
+msgstr ""
+
+#: archive.php:28
+#: index.php:32
+#: search.php:30
+#: single.php:31
+msgid "Published by"
+msgstr ""
+
+#: archive.php:29
+#: index.php:33
+#: search.php:31
+#: single.php:32
+msgid "on"
+msgstr ""
+
+#: archive.php:32
+#: index.php:36
+#: search.php:34
+#: single.php:35
+msgid "Categories"
+msgstr ""
+
+#: archive.php:36
+#: index.php:40
+#: search.php:38
+#: single.php:39
+msgid "Tags"
+msgstr ""
+
+#: archive.php:45
+#: index.php:49
+#: search.php:47
+msgid "Previous"
+msgstr ""
+
+#: archive.php:46
+#: index.php:50
+#: search.php:48
+msgid "Next"
+msgstr ""
+
+#: archive.php:50
+#: elementor/widgets/news.php:208
+#: index.php:54 page.php:35
+#: single.php:52
+msgid "Nothing to display"
+msgstr ""
+
+#: comments.php:29
+#, php-format
+msgctxt "comments title"
+msgid ""
+"One thought on &ldquo;"
+"%s&rdquo;"
+msgstr ""
+
+#: comments.php:34
+#, php-format
+msgctxt "comments title"
+msgid ""
+"%1$s thought on &ldquo;"
+"%2$s&rdquo;"
+msgid_plural ""
+"%1$s thoughts on &ldquo;"
+"%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:69
+msgid ""
+"Comments are closed."
+msgstr ""
+
+#: elementor/register.php:32
+msgid "Bikeride"
+msgstr ""
+
+#: elementor/widgets/heading.php:41
+msgid "BR Heading"
+msgstr ""
+
+#: elementor/widgets/heading.php:114
+#: elementor/widgets/hotel.php:114
+#: elementor/widgets/info.php:114
+#: elementor/widgets/know.php:114
+#: elementor/widgets/news.php:114
+#: elementor/widgets/testimonial.php:114
+msgid "Content"
+msgstr ""
+
+#: elementor/widgets/heading.php:122
+msgid "BR title"
+msgstr ""
+
+#: elementor/widgets/heading.php:125
+msgid "Your BR title here"
+msgstr ""
+
+#: elementor/widgets/heading.php:132
+msgid "Heading type"
+msgstr ""
+
+#: elementor/widgets/heading.php:135
+msgid "H1"
+msgstr ""
+
+#: elementor/widgets/heading.php:136
+msgid "H2"
+msgstr ""
+
+#: elementor/widgets/heading.php:137
+msgid "H3"
+msgstr ""
+
+#: elementor/widgets/heading.php:138
+msgid "H4"
+msgstr ""
+
+#: elementor/widgets/heading.php:139
+msgid "H5"
+msgstr ""
+
+#: elementor/widgets/heading.php:140
+msgid "H6"
+msgstr ""
+
+#: elementor/widgets/heading.php:151
+#: elementor/widgets/know.php:134
+msgid "Style Section"
+msgstr ""
+
+#: elementor/widgets/heading.php:159
+msgid "BR title color"
+msgstr ""
+
+#: elementor/widgets/hotel.php:41
+msgid "BR Hotel"
+msgstr ""
+
+#: elementor/widgets/hotel.php:122
+msgid "BR Hotel name"
+msgstr ""
+
+#: elementor/widgets/hotel.php:125
+msgid ""
+"Your BR Hotel name here"
+msgstr ""
+
+#: elementor/widgets/hotel.php:132
+msgid "BR Hotel Address"
+msgstr ""
+
+#: elementor/widgets/hotel.php:136
+msgid ""
+"Your BR Address here"
+msgstr ""
+
+#: elementor/widgets/hotel.php:143
+msgid "BR Phone number"
+msgstr ""
+
+#: elementor/widgets/hotel.php:146
+msgid ""
+"Your BR Hotel phone "
+"number here"
+msgstr ""
+
+#: elementor/widgets/hotel.php:153
+msgid "Link"
+msgstr ""
+
+#: elementor/widgets/imagepop.php:39
+msgid "BR Image with Popup"
+msgstr ""
+
+#: elementor/widgets/imagepop.php:107
+msgid ""
+"Image with Popup Content"
+msgstr ""
+
+#: elementor/widgets/imagepop.php:115
+#: elementor/widgets/pos.php:125
+msgid "Choose Image"
+msgstr ""
+
+#: elementor/widgets/info.php:41
+msgid "BR Info"
+msgstr ""
+
+#: elementor/widgets/info.php:122
+msgid "BR Info title"
+msgstr ""
+
+#: elementor/widgets/info.php:125
+msgid ""
+"Your BR Info title here"
+msgstr ""
+
+#: elementor/widgets/info.php:132
+msgid "BR Info Description"
+msgstr ""
+
+#: elementor/widgets/info.php:136
+#: elementor/widgets/testimonial.php:136
+msgid ""
+"Your BR Description here"
+msgstr ""
+
+#: elementor/widgets/know.php:41
+msgid "BR Did you know?"
+msgstr ""
+
+#: elementor/widgets/know.php:122
+msgid ""
+"BR Did you know? legend"
+msgstr ""
+
+#: elementor/widgets/know.php:125
+msgid ""
+"Your BR Did you know? "
+"legend here"
+msgstr ""
+
+#: elementor/widgets/know.php:142
+msgid ""
+"BR Did you know? color"
+msgstr ""
+
+#: elementor/widgets/news.php:41
+msgid "BR News"
+msgstr ""
+
+#: elementor/widgets/news.php:123
+msgid ""
+"How many news entries?"
+msgstr ""
+
+#: elementor/widgets/news.php:200
+msgid "Read More"
+msgstr ""
+
+#: elementor/widgets/pos.php:39
+msgid "BR Point of Sale"
+msgstr ""
+
+#: elementor/widgets/pos.php:107
+msgid ""
+"Point of Sale Content"
+msgstr ""
+
+#: elementor/widgets/pos.php:115
+msgid ""
+"BR Point of Sale area"
+msgstr ""
+
+#: elementor/widgets/pos.php:118
+msgid ""
+"Your BR Point of Sale "
+"area"
+msgstr ""
+
+#: elementor/widgets/pos.php:140
+#: elementor/widgets/pos.php:142
+msgid "Point of Sale name"
+msgstr ""
+
+#: elementor/widgets/pos.php:154
+#: elementor/widgets/pos.php:156
+msgid ""
+"Point of Sale address"
+msgstr ""
+
+#: elementor/widgets/pos.php:168
+#: elementor/widgets/pos.php:170
+msgid "Point of Sale phone"
+msgstr ""
+
+#: elementor/widgets/pos.php:184
+msgid "Point of Sale Items"
+msgstr ""
+
+#: elementor/widgets/pos.php:189
+msgid ""
+"Point of Sale Item #1"
+msgstr ""
+
+#: elementor/widgets/pos.php:193
+msgid ""
+"Point of Sale Item #2"
+msgstr ""
+
+#: elementor/widgets/pos.php:197
+msgid ""
+"Point of Sale Item #3"
+msgstr ""
+
+#: elementor/widgets/pos.php:238
+msgid "POINT OF SALE"
+msgstr ""
+
+#: elementor/widgets/pos.php:264
+msgid ""
+"Souvenirs are delivered "
+"only during the event"
+msgstr ""
+
+#: elementor/widgets/testimonial.php:41
+msgid "BR Testimonial"
+msgstr ""
+
+#: elementor/widgets/testimonial.php:122
+msgid "BR Testimonial name"
+msgstr ""
+
+#: elementor/widgets/testimonial.php:125
+msgid ""
+"Your BR Testimonial name "
+"here"
+msgstr ""
+
+#: elementor/widgets/testimonial.php:132
+msgid ""
+"BR Testimonial "
+"Description"
+msgstr ""
+
+#: elementor/widgets/testimonial.php:173
+msgid "Cyclist"
+msgstr ""
+
+#: footer.php:19
+msgid ""
+"Copyright - All Rights "
+"Reserved"
+msgstr ""
+
+#: functions.php:88
+msgid ""
+"Bike Ride Blog Sidebar"
+msgstr ""
+
+#: functions.php:90
+msgid ""
+"Drag and drop your "
+"widgets here"
+msgstr ""
+
+#: inc/customizer.php:15
+msgid "Copyright Settings"
+msgstr ""
+
+#: inc/customizer.php:16
+msgid "Copyright Section"
+msgstr ""
+
+#: inc/customizer.php:31
+msgid "Copyright"
+msgstr ""
+
+#: inc/customizer.php:32
+msgid ""
+"Please, add your "
+"copyright information "
+"here"
+msgstr ""
+
+#: inc/customizer.php:43
+msgid ""
+"Social Network Settings"
+msgstr ""
+
+#: inc/customizer.php:44
+msgid ""
+"Social Network Section"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Facebook"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid ""
+"Please, add your "
+"Facebook link here"
+msgstr ""
+
+#: inc/customizer.php:77
+msgid "Instagram"
+msgstr ""
+
+#: inc/customizer.php:78
+msgid ""
+"Please, add your "
+"Instagram link here"
+msgstr ""
+
+#: inc/customizer.php:95
+msgid "Pinterest"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid ""
+"Please, add your "
+"Pinterest link here"
+msgstr ""
+
+#: inc/customizer.php:113
+msgid "YouTube"
+msgstr ""
+
+#: inc/customizer.php:114
+msgid ""
+"Please, add your YouTube "
+"link here"
+msgstr ""
+
+#: inc/customizer.php:124
+msgid ""
+"Sticky Menu Settings"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Sticky Menu Section"
+msgstr ""
+
+#: inc/customizer.php:140
+msgid "Show Sticky Menu?"
+msgstr ""
+
+#: inc/customizer.php:150
+msgid "Logo Settings"
+msgstr ""
+
+#: inc/customizer.php:151
+msgid "Logo Section"
+msgstr ""
+
+#: inc/customizer.php:169
+msgid "Logo black"
+msgstr ""
+
+#: inc/customizer.php:190
+msgid "Logo white"
+msgstr ""
+
+#: index.php:17
+msgid "News"
+msgstr ""
+
+#: search.php:12
+msgid "Search results for"
+msgstr ""
+
+#: search.php:55
+msgid ""
+"There are no results for "
+"your query."
+msgstr ""
+
+#: searchform.php:10
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr ""
+
+#: searchform.php:11
+msgctxt "submit button"
+msgid "Search"
+msgstr ""

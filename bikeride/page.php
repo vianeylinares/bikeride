@@ -32,7 +32,7 @@
         endwhile;
     else:
         ?>
-        <p>Nothing to display</p>
+        <p><?php esc_html_e( 'Nothing to display', 'bikeride' ); ?></p>
         <?php
     endif;
 ?>
