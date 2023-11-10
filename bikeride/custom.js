@@ -54,3 +54,26 @@ window.addEventListener( 'scroll', function fixedHeaderBackground(){
     }
 
 } );
+
+
+var miniCart = document.getElementById( 'mini-cart' );
+let miniCartActive = false;
+
+miniCart.addEventListener( 'click', function handleClick(){
+
+    miniCartPanel = document.getElementsByClassName( 'dropdown-menu-mini-cart' );
+    console.log(miniCartPanel);
+
+    switch( miniCartActive ){
+        case true:
+            miniCartPanel[0].style.display = 'none';
+            miniCartActive = false;
+            break;
+        case false:
+            miniCartPanel[0].style.display = 'flex';
+            miniCartActive = true;
+            break;
+
+    }
+
+} );

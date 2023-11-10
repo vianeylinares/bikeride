@@ -54,8 +54,8 @@
                         );
                     ?>
                 </nav>
-                <div class="shop-items" style="color: transparent;">
-                    Store items
+                <div class="shop-items">
+                    <?php echo do_shortcode( '[bikeride_mini_cart]' ); ?>
                 </div>
             </header>
             <main class="main-content">
