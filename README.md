@@ -82,4 +82,4 @@ The theme was developed with:
 <li>Elementor</li>
 </ul>
 
-The 'Bikeride - WP theme' demo is [here](https://vianeylinares.com/portfolio/bikeride/).
+The 'Bikeride - WP theme' demo is [here](https://devbucket.xyz/portfolio/bikeride/).
