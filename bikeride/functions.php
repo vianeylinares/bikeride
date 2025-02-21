@@ -23,7 +23,7 @@ require_once get_template_directory() . '/elementor/register.php';
 function bikeride_scripts(){
 
     wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/font-awesome.css', 'all' );
-    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Pacifico&display=swap', array(), null );
+    //wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Pacifico&display=swap', array(), null );
     wp_enqueue_style( 'bikeride-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all' );
 
     wp_enqueue_script( 'bikeride-scripts', get_template_directory_uri() . '/custom.js' , array(), '', true  );
