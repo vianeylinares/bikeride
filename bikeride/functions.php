@@ -235,3 +235,16 @@ function bikeride_mini_cart_shortcode() {
 
 }
 add_shortcode( 'bikeride_mini_cart', 'bikeride_mini_cart_shortcode' );
+
+
+function bikeride_preload_images(){
+
+    ?>
+
+        <link rel="preload" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner.webp" />
+        <link rel="preload" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner-mobile.webp" />
+
+    <?php
+
+}
+add_action( "wp_head", "bikeride_preload_images" );
