@@ -32,8 +32,9 @@
                             $white_logo = ( get_post_meta( $post->ID, 'white_logo', true ) ) ? esc_html( get_post_meta( $post->ID, 'white_logo', true ) ) : 0 ;
                             $white_logo_checked = ( $white_logo != 0 ) ? 'checked' : '';
                             $logo = ( $white_logo !=0 )? "white" : "black" ;
+                            $image_attributes = wp_get_attachment_image_src( get_theme_mod( 'set_logo_' . $logo ) );
                             ?>
-                            <img src="<?php echo wp_get_attachment_url( get_theme_mod( 'set_logo_' . $logo ) ); ?>" alt="logo" />
+                            <img src="<?php echo wp_get_attachment_url( get_theme_mod( 'set_logo_' . $logo ) ); ?>" alt="logo" width="<?php echo $image_attributes[1]; ?>" height="<?php echo $image_attributes[2]; ?>" />
                         <?php else: ?>
                             <span class="logo-text"><?php bloginfo( 'title' ); ?></span>
                         <?php endif; ?>
