@@ -239,12 +239,24 @@ add_shortcode( 'bikeride_mini_cart', 'bikeride_mini_cart_shortcode' );
 
 function bikeride_preload_images(){
 
-    ?>
+    global $post;
 
-        <link rel="preload" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner.webp" />
-        <link rel="preload" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner-mobile.webp" />
+    if( $post->ID == 1848 ){
+        ?>
 
-    <?php
+            <link rel="preload" fetchpriority="high" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner.webp" />
+            <link rel="preload" fetchpriority="high" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/home-banner-mobile.webp" />
+
+        <?php
+    }
+
+    if( $post->ID == 1914 || $post->ID == 1934 || $post->ID == 1943 || $post->ID == 1958 ){
+        ?>
+
+            <link rel="preload" fetchpriority="high" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/header-banner-wide-short.webp" />
+
+        <?php
+    }
 
 }
 add_action( "wp_head", "bikeride_preload_images" );
