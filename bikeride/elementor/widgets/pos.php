@@ -218,6 +218,8 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
 	protected function render() {
 		$settings = $this->get_settings_for_display();
 
+        $image_attributes = wp_get_attachment_image_src( $settings['br_pos_image']['id'], 'full' );
+
         // get the individual values of the input
         $br_pos_area = $settings['br_pos_area'];
         $br_random = rand( 1000, 9999 );
@@ -228,7 +230,7 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
             <a class="popup-with-zoom-anim" href="#small-dialog-<?php echo $br_random; ?>" >
                 <?php
                     // Get image URL
-                    echo '<img src="' . $settings['br_pos_image']['url'] . '" alt="' . $settings['br_pos_image']['alt'] . '" >';
+                    echo '<img src="' . $settings['br_pos_image']['url'] . '" alt="' . get_post_meta($settings['br_image_with_popup']['id'], '_wp_attachment_image_alt', true) . '" width="' . $image_attributes[1] . '" height="' . $image_attributes[2] . '" >';
                 ?>
             </a>
 
