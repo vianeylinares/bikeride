@@ -250,7 +250,7 @@ function bikeride_preload_images(){
         <?php
     }
 
-    if( $post->ID == 1914 || $post->ID == 1934 || $post->ID == 1943 || $post->ID == 1958 ){
+    if( $post->ID == 1914 || $post->ID == 1934 || $post->ID == 1943 || $post->ID == 1958 || $post->ID == 1949 ){
         ?>
 
             <link rel="preload" fetchpriority="high" as="image" href="<?php echo home_url(); ?>/wp-content/uploads/2025/02/header-banner-wide-short.webp" />
