@@ -22,7 +22,7 @@
                 $menu_options .= ( get_theme_mod( 'set_sticky_menu', 0 ) )? ' sticky-header' : '' ;
                 $menu_options .= ( get_post_meta( $post->ID, 'white_logo', true ) )? ' white-logo-and-header-text' : '' ;
             ?>
-            <header id="header" class="header <?php echo $menu_options; ?>">
+            <header id="header" class="header <?php if( get_post_type() === 'post' || get_post_type() === 'product' ){ echo "header-over-content"; } ?> <?php echo $menu_options; ?>">
                 <div class="mobile-menu-control">
                     <button id="menu-toggle" type="button">
                         <span></span>

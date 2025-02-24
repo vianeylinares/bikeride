@@ -191,13 +191,35 @@ function bikeride_frontend_styles(){
                 <?php
             }
 
-            if( get_post_meta( $post->ID, 'content_behind_menu', true ) != 0 ){
+            if( get_post_meta( $post->ID, 'content_behind_menu', true ) != 0 && !is_category() ){
                 ?>
                     .header{
                         background-color: transparent;
                     }
                     .main-content{
                         padding-top: 0;
+                    }
+                <?php
+            }
+
+            if( get_theme_mod( 'set_sticky_menu' ) == true && ( is_category() || is_home() ) ){
+                ?>
+                    .main-content{
+                        padding-top: 50px;
+                    }
+                    .header{
+                        background-color: transparent;
+                    }
+                <?php
+            }
+
+            if ( is_plugin_active( 'woocommerce/woocommerce.php' ) && ( get_theme_mod( 'set_sticky_menu' ) == true && ( is_product_category() || is_shop() || is_product() || is_cart() || is_checkout() ) ) ) {
+                ?>
+                    .main-content{
+                        padding-top: 50px;
+                    }
+                    .header{
+                        background-color: transparent;
                     }
                 <?php
             }
