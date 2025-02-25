@@ -621,6 +621,7 @@ a{
 
 .sticky{
     background-color: #E0B1CB;
+    padding: 10px;
 }
 
 @media (max-width: 767px){
