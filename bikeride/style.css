@@ -1118,6 +1118,7 @@ body.error404 .main-content{
     padding: 5px 10px !important;
     margin: 5px 10px !important;
     border-radius: 5px !important;
+    text-decoration: none;
 }
 
 .shop-items .dropdown-back i{
@@ -1134,6 +1135,13 @@ body.error404 .main-content{
 
 .woocommerce-mini-cart__empty-message{
     color: #000000;
+}
+
+#mini-cart{
+    text-decoration: none;
+}
+.mini_cart_item a.remove{
+    text-decoration: none;
 }
 
 
