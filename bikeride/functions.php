@@ -202,7 +202,7 @@ function bikeride_frontend_styles(){
                 <?php
             }
 
-            if( get_theme_mod( 'set_sticky_menu' ) == true && ( is_category() || is_home() ) ){
+            if( get_theme_mod( 'set_sticky_menu' ) == true && ( is_category() || is_home() || is_author() ) ){
                 ?>
                     .main-content{
                         padding-top: 50px;
