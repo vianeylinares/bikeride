@@ -245,13 +245,11 @@ function bikeride_mini_cart_shortcode() {
             </span>
         </div>
     </a>
-    <ul class="dropdown-menu dropdown-menu-mini-cart">
-        <li>
-            <div class="widget_shopping_cart_content">
-                <?php woocommerce_mini_cart(); ?>
-            </div>
-        </li>
-    </ul>
+    <div class="dropdown-menu dropdown-menu-mini-cart">
+        <div class="widget_shopping_cart_content">
+            <?php woocommerce_mini_cart(); ?>
+        </div>
+    </div>
 
     <?php
 
