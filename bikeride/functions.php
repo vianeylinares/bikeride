@@ -213,7 +213,7 @@ function bikeride_frontend_styles(){
                 <?php
             }
 
-            if ( is_plugin_active( 'woocommerce/woocommerce.php' ) && ( get_theme_mod( 'set_sticky_menu' ) == true && ( is_product_category() || is_shop() || is_product() || is_cart() || is_checkout() ) ) ) {
+            if( class_exists( 'WooCommerce' ) && ( get_theme_mod( 'set_sticky_menu' ) == true && ( is_product_category() || is_shop() || is_product() || is_cart() || is_checkout() ) ) ) {
                 ?>
                     .main-content{
                         padding-top: 50px;

@@ -57,7 +57,7 @@
                 </nav>
                 <div class="shop-items">
                     <?php 
-                        if ( is_plugin_active( 'woocommerce/woocommerce.php' ) ) {
+                        if( class_exists( 'WooCommerce' ) ) {
                             echo do_shortcode( '[bikeride_mini_cart]' );
                         }
                     ?>
