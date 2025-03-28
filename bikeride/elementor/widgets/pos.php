@@ -207,6 +207,14 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
 
 	}
 
+    public function get_style_depends(): array {
+        return [ 'magnific-popup-css' ];
+    }
+
+    public function get_script_depends(): array {
+        return [ 'magnific-popup-js', 'magnific-popup-activation-js' ];
+    }
+
 	/**
 	 * Render Point of Sale widget output on the frontend.
 	 *
@@ -216,6 +224,7 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
 	 * @access protected
 	 */
 	protected function render() {
+
 		$settings = $this->get_settings_for_display();
 
         $image_attributes = wp_get_attachment_image_src( $settings['br_pos_image']['id'], 'full' );

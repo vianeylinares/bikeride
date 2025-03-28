@@ -40,11 +40,10 @@ add_action( 'elementor/elements/categories_registered', 'bikeride_add_elementor_
 
 function bikeride_elementor_scripts(){
 
-    wp_enqueue_style( 'magnific-popup-css',  get_template_directory_uri() . '/elementor/vendor/magnific-popup.css', array(), "", 'all' );
-
-    wp_enqueue_script( 'magnific-popup-js',  get_template_directory_uri() . '/elementor/vendor/magnific-popup.js', array('jquery'), "", true );
-
-    wp_enqueue_script( 'magnific-popup-activation-js',  get_template_directory_uri() . '/elementor/js/magnific-popup-activation.js', array('jquery'), "", true );
+    // For Point of sale (POS) widget
+    wp_register_style( 'magnific-popup-css',  get_template_directory_uri() . '/elementor/vendor/magnific-popup.css', array(), "", 'all' );
+    wp_register_script( 'magnific-popup-js',  get_template_directory_uri() . '/elementor/vendor/magnific-popup.js', array('jquery'), "", true );
+    wp_register_script( 'magnific-popup-activation-js',  get_template_directory_uri() . '/elementor/js/magnific-popup-activation.js', array('jquery'), "", true );
 
 }
 add_action( 'wp_enqueue_scripts', 'bikeride_elementor_scripts' );
