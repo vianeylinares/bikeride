@@ -131,28 +131,6 @@ class Bikeride_News_Widget extends \Elementor\Widget_Base{
 
 		$this->end_controls_section();
 
-        /*$this->start_controls_section(
-            'style_section',
-            [
-                'label' => esc_html__( 'Style Section', 'essential-elementor-widget' ),
-                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
-            ]
-        );
-
-            $this->add_control(
-                'br_news_color',
-                [
-                    'label' => esc_html__( 'BR title color', 'bikeride' ),
-                    'type' => \Elementor\Controls_Manager::COLOR,
-                    'selectors' => [
-                        '{{WRAPPER}} .br-news-color' => 'color: {{VALUE}};',
-                        '{{WRAPPER}} .br-line' => 'border-bottom-color: {{VALUE}};',
-                    ],
-                ]
-            );
-
-        $this->end_controls_section();*/
-
     }
 
 

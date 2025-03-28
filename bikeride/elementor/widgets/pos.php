@@ -260,7 +260,6 @@ class Bikeride_POS_Widget extends \Elementor\Widget_Base {
                         foreach ( $settings['list_items'] as $index => $item ) {
                             $repeater_setting_key = $this->get_repeater_setting_key( 'pos_name', 'list_items', $index );
                             $this->add_render_attribute( $repeater_setting_key, 'class', 'pos-location-item' );
-                            //$this->add_inline_editing_attributes( $repeater_setting_key );
                             ?>
                             <div <?php $this->print_render_attribute_string( $repeater_setting_key ); ?>>                            
                                 <h4><?php echo $settings['list_items'][$index]['pos_name']; ?></h4>

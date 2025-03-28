@@ -137,8 +137,7 @@ class Bikeride_ImagePop_Widget extends \Elementor\Widget_Base {
 
 		$image_attributes = wp_get_attachment_image_src( $settings['br_image_with_popup']['id'], 'full' );
 
-        // get the individual values of the input
-        //$br_pos_area = $settings['br_pos_area'];
+        
         $br_random = rand( 1000, 9999 );
 
 		$this->add_render_attribute( 'list', 'class', 'elementor-list-widget' );
