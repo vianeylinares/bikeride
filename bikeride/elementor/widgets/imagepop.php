@@ -124,6 +124,14 @@ class Bikeride_ImagePop_Widget extends \Elementor\Widget_Base {
 
 	}
 
+	public function get_style_depends(): array {
+        return [ 'magnific-popup-css' ];
+    }
+
+    public function get_script_depends(): array {
+        return [ 'magnific-popup-js', 'magnific-popup-activation-js' ];
+    }
+
 	/**
 	 * Render Image with Popup widget output on the frontend.
 	 *
